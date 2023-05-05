@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="virus.png" type="image/x-icon">
+    <style>
+        #instruksi, #counter{
+            margin: 50px auto;
+            background-color: gray;
+            border: 1px solid #000;
+            width: 400px;
+            padding: 5px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div id="instruksi">
+        <div>
+            
+        </div>
+        <h2>instruksi</h2>
+        <ol>
+            <li>
+                masukkan username
+            </li>
+            <li>
+                masukkan username
+            </li>
+            <li>
+                masukkan username
+            </li>
+            <li>
+                masukkan username
+            </li>
+            <li>
+                masukkan username
+            </li>
+            <li>
+                masukkan username
+            </li>
+        </ol>
+        <div style="text-align: center;">
+
+            <p>
+                <input type="text" id="username">
+            </p>
+            <p>
+                <input type="submit" value="play" id="play">
+            </p>
+    
+
+        </div>
+
+
+    </div>
+    <div id="counter">
+        <h2 style="text-align: center;font-size: 80px;" id="time">3</h2>
+
+    </div>
+
+<script>
+    var username = document.getElementById("username")
+    var play = document.getElementById("play")
+    var instruksi = document.getElementById("instruksi")
+    var counter = document.getElementById("counter")
+    var timeDown = document.getElementById("time")
+
+
+    counter.style.display="none"
+
+    play.addEventListener("click",function(){
+       var userVal = (username.value)
+       if(userVal == ''){
+            alert("Username masih kosong")
+       }else{
+        // menampilkan tampilan game
+        instruksi.style.display="none"
+        counter.style.display="block"
+
+        var time = 3
+        setInterval(function(){
+            
+            if(time <= 0){
+                //alert()
+                timeDown.innerHTML = 0
+                // document.getElementById("time").innerHTML = 0
+
+
+            }else{
+                timeDown.innerHTML = time
+                // document.getElementById("time").innerHTML = time
+
+
+            }
+            console.log(time)
+
+            time -= 1;
+            
+        },1000)
+
+
+
+
+
+       }
+
+    })
+
+
+
+
+</script>
+
+    
+</body>
+</html>
