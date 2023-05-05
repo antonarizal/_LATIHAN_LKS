@@ -1,0 +1,79 @@
+CRITICAL - 2023-04-14 23:32:17 --> Undefined property: App\Controllers\Auth::$resquest
+in APPPATH\Controllers\Auth.php on line 24.
+ 1 APPPATH\Controllers\Auth.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Auth::$resquest', 'D:\\LKS - WEB TECHNOLOGY\\DEMO\\latihan-lks\\app\\Controllers\\Auth.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\LKS - WEB TECHNOLOGY\\DEMO\\latihan-lks\\public\\index.php')
+CRITICAL - 2023-04-14 23:33:04 --> Undefined property: App\Controllers\Auth::$resquest
+in APPPATH\Controllers\Auth.php on line 24.
+ 1 APPPATH\Controllers\Auth.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Auth::$resquest', 'D:\\LKS - WEB TECHNOLOGY\\DEMO\\latihan-lks\\app\\Controllers\\Auth.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\LKS - WEB TECHNOLOGY\\DEMO\\latihan-lks\\public\\index.php')
+CRITICAL - 2023-04-14 23:33:41 --> Undefined property: App\Controllers\Auth::$resquest
+in APPPATH\Controllers\Auth.php on line 24.
+ 1 APPPATH\Controllers\Auth.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Auth::$resquest', 'D:\\LKS - WEB TECHNOLOGY\\DEMO\\latihan-lks\\app\\Controllers\\Auth.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\LKS - WEB TECHNOLOGY\\DEMO\\latihan-lks\\public\\index.php')
+CRITICAL - 2023-04-14 23:34:16 --> Undefined property: App\Controllers\Auth::$resquest
+in APPPATH\Controllers\Auth.php on line 24.
+ 1 APPPATH\Controllers\Auth.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Auth::$resquest', 'D:\\LKS - WEB TECHNOLOGY\\DEMO\\latihan-lks\\app\\Controllers\\Auth.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\LKS - WEB TECHNOLOGY\\DEMO\\latihan-lks\\public\\index.php')
+CRITICAL - 2023-04-14 23:34:26 --> Undefined property: App\Controllers\Auth::$resquest
+in APPPATH\Controllers\Auth.php on line 24.
+ 1 APPPATH\Controllers\Auth.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Auth::$resquest', 'D:\\LKS - WEB TECHNOLOGY\\DEMO\\latihan-lks\\app\\Controllers\\Auth.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\LKS - WEB TECHNOLOGY\\DEMO\\latihan-lks\\public\\index.php')
+CRITICAL - 2023-04-14 23:38:39 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getRow()
+in APPPATH\Controllers\Auth.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth->login()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\LKS - WEB TECHNOLOGY\\DEMO\\latihan-lks\\public\\index.php')
+CRITICAL - 2023-04-14 23:44:21 --> Undefined array key "token"
+in APPPATH\Controllers\Auth.php on line 31.
+ 1 APPPATH\Controllers\Auth.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "token"', 'D:\\LKS - WEB TECHNOLOGY\\DEMO\\latihan-lks\\app\\Controllers\\Auth.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\LKS - WEB TECHNOLOGY\\DEMO\\latihan-lks\\public\\index.php')
+CRITICAL - 2023-04-14 23:45:04 --> array_merge(): Argument #2 must be of type array, string given
+in APPPATH\Controllers\Auth.php on line 31.
+ 1 APPPATH\Controllers\Auth.php(31): array_merge([...], '0a11a7db942d022cb1f771a93f0e8cb5')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\LKS - WEB TECHNOLOGY\\DEMO\\latihan-lks\\public\\index.php')
+CRITICAL - 2023-04-14 23:45:47 --> array_merge(): Argument #2 must be of type array, string given
+in APPPATH\Controllers\Auth.php on line 33.
+ 1 APPPATH\Controllers\Auth.php(33): array_merge([...], '0a11a7db942d022cb1f771a93f0e8cb5')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\LKS - WEB TECHNOLOGY\\DEMO\\latihan-lks\\public\\index.php')
+CRITICAL - 2023-04-14 23:54:23 --> Undefined variable $array
+in APPPATH\Controllers\Auth.php on line 33.
+ 1 APPPATH\Controllers\Auth.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $array', 'D:\\LKS - WEB TECHNOLOGY\\DEMO\\latihan-lks\\app\\Controllers\\Auth.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\LKS - WEB TECHNOLOGY\\DEMO\\latihan-lks\\public\\index.php')
