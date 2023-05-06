@@ -12,7 +12,125 @@
             background-color: gray;
             border: 1px solid #000;
             width: 400px;
-            padding: 5px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        body{
+            margin:0px;
+            background-color: #454343;
+            color: aliceblue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .box-score{
+            position:fixed;
+            top : 10px;
+            left:0px;
+            color :#ccc;
+            margin-left : 10px;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .box-control{
+            position:fixed;
+            top : 200px;
+            left:0px;
+            color :#ccc;
+            margin-left : 0px;
+            padding-left: 10px;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #7e1111;
+            width:200px;
+            border-radius: 5px;
+        }
+        .box-game{
+            margin:0 auto;
+            padding-top:0;
+            background-color:#f5f7f8;
+            overflow:hidden;
+            min-height: 83vh;
+            max-width:420px; 
+            height:100%;
+            position:relative;
+            border-bottom: 10px solid #12c9a5;
+        }
+        .layer1{
+            padding-top:0;
+            background-color:#f5f7f8;
+            overflow:hidden;
+            min-height: 100vh;
+            width:120px; 
+            height:100%;
+            position:absolute;
+            left:0px;
+            border-left:0px solid #ccc
+
+        }
+
+        .layer2{
+            padding-top:0;
+            background-color:#f5f7f8;
+            overflow:hidden;
+            min-height: 100vh;
+            width:100px; 
+            height:100%;
+            position:absolute;
+            left:100px;
+            border-left:2px solid #ccc
+        }
+
+        .layer3{
+            padding-top:0;
+            background-color:#f5f7f8;
+            overflow:hidden;
+            min-height: 100vh;
+            width:100px; 
+            height:100%;
+            position:absolute;
+            left:210px;
+            border-left:2px solid #ccc
+        }
+        .layer4{
+            padding-top:0;
+            background-color:#f5f7f8;
+            overflow:hidden;
+            min-height: 100vh;
+            width:100px; 
+            height:100%;
+            position:absolute;
+            left:320px;
+            border-left:2px solid #ccc;
+        }
+        .virus{
+            max-width:90px;
+            text-align: center;
+            display: none;
+
+        }
+        .suntik{
+            margin:0 auto;
+            padding:0 5px;
+            background-color:#7e1111;
+            overflow:hidden;
+            min-height: 17vh;
+            max-width:420px; 
+            position:relative;
+        }
+
+        #username{
+            width:90%;
+            padding:5px;
+            font-size: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        #play{
+            background-color: #7e1111;
+            color:white;
+            padding:5px 10px; 
+            border : 1px solid #ccc; 
+            border-radius: 5px;
+            font-size: 20px;
         }
 
 
@@ -24,25 +142,19 @@
         <div>
             
         </div>
-        <h2>instruksi</h2>
+        <h2 style="text-align: ceter;">Instruksi</h2>
         <ol>
             <li>
-                masukkan username
+                Input Username and click play
             </li>
             <li>
-                masukkan username
+                Destry virus with D F JK key
             </li>
             <li>
-                masukkan username
+                Reach high score
             </li>
             <li>
-                masukkan username
-            </li>
-            <li>
-                masukkan username
-            </li>
-            <li>
-                masukkan username
+                Enjoy the game
             </li>
         </ol>
         <div style="text-align: center;">
@@ -51,10 +163,8 @@
                 <input type="text" id="username">
             </p>
             <p>
-                <input type="submit" value="play" id="play">
+                <input type="submit" value="Play" id="play">
             </p>
-    
-
         </div>
 
 
@@ -64,7 +174,55 @@
 
     </div>
 
+    <div class="box-control" id="box-control">
+        <h3>Virus Slayer</h3>
+        <p><span id="restart">Restart</span></p>
+        <p><span id="quit">Quit</span></p>
+    </div>
+
+    <div class="box-score" id="box-score">
+        <p>Time : <span id="minutes">00</span>:<span id="second">00</span></p>
+        <p>Score : <span id="score">0</span></p>
+        <p>Fail : <span id="fail">0</span></p>
+        <p>Player : <span id="player">0</span></p>
+    </div>
+
+    <div class="box-game"id="box-game">
+
+        <div class="layer1">
+            <img src="virus.png" class="virus" id="virus1">
+
+        </div>
+        <div class="layer2">
+            <img src="virus.png" class="virus" id="virus2">
+
+        </div>
+        <div class="layer3">
+            <img src="virus.png" class="virus" id="virus3">
+
+        </div>
+        <div class="layer4">
+            <img src="virus.png" class="virus" id="virus4">
+
+        </div>
+    </div>
+    <div class="suntik" id="suntik">
+        <img src="d.png" alt="" style="position:absolute;bottom:0px;z-index:100">
+
+    </div>
+
 <script>
+    
+    var data = {
+        time : 0,
+        second : 0,
+        minutes : 0,
+        score : 0,
+        fail : 0,
+        player : "",
+    }
+
+
     var username = document.getElementById("username")
     var play = document.getElementById("play")
     var instruksi = document.getElementById("instruksi")
@@ -73,46 +231,115 @@
 
 
     counter.style.display="none"
+    document.getElementById("box-game").style.display="none"
+    document.getElementById("box-score").style.display="none"
+    document.getElementById("box-control").style.display="none"
+    document.getElementById("suntik").style.display="none"
 
     play.addEventListener("click",function(){
        var userVal = (username.value)
        if(userVal == ''){
             alert("Username masih kosong")
        }else{
-        // menampilkan tampilan game
+        // menampilkan tampilan counter
+
+        data.username = userVal
+        console.log(data)
+
         instruksi.style.display="none"
         counter.style.display="block"
 
         var time = 3
-        setInterval(function(){
+        var counterdown = setInterval(function(){
             
             if(time <= 0){
                 //alert()
+                document.getElementById("player").innerHTML=data.username
                 timeDown.innerHTML = 0
-                // document.getElementById("time").innerHTML = 0
+                counter.style.display="none"
+                document.getElementById("box-game").style.display="block"
+                document.getElementById("box-score").style.display="block"
+                document.getElementById("box-control").style.display="block"
+                document.getElementById("suntik").style.display="block"
+                // var randomId = random_item([1,2,3,4])
+                moveVirus(1)
+                moveVirus(2)
+                moveVirus(3)
+                moveVirus(4)
+                clearInterval(counterdown)
+                timer()
 
 
             }else{
                 timeDown.innerHTML = time
-                // document.getElementById("time").innerHTML = time
 
 
             }
             console.log(time)
-
             time -= 1;
-            
         },1000)
-
-
-
-
 
        }
 
     })
 
+    document.addEventListener("keydown", function(event) {
+    var key = (event.which);
 
+    })
+    function random_item(items)
+    {
+    return items[Math.floor(Math.random()*items.length)]; 
+    }
+
+var items = [1, 2, 3, 4];
+
+
+    function moveVirus(id){
+        console.log();
+        var posisi = 0;
+        // var id = random_item([1,2,3,4])
+        var speed = random_item([1,2,3,4,5,6,7,8,9,10])
+        // console.log(speed)
+        // console.log(id)
+        var virusMoving = setInterval(function(){
+            var idVirus = document.getElementById("virus"+id)
+            idVirus.style.marginTop = posisi + "px"
+            idVirus.style.display = "block"
+        var posisiVirus = parseInt(idVirus.style.marginTop.replace("px",""))
+            if(posisiVirus >= 600 ){
+                clearInterval(virusMoving);
+                posisi = 0
+                idVirus.style.marginTop = 0 + "px"
+                idVirus.style.display = "none"
+                data.fail = data.fail + 1
+                document.getElementById("fail").innerHTML = data.fail
+                moveVirus(id)
+            }
+            // console.log("ID:"+ id +":"+idVirus.style.marginTop)
+        posisi += 1;
+    },speed)
+    }
+
+    function timer(){
+        var ms = 0
+        var second = 0
+        setInterval(function(){
+            document.getElementById("second").innerHTML = second 
+            var minutes = parseInt(second / 60)
+            document.getElementById("minutes").innerHTML = minutes 
+            if(second >=60 ){
+                document.getElementById("second").innerHTML = second 
+            }
+            second +=1
+            ms +=1
+
+            console.log(second)
+            console.log(minutes)
+
+        },100)
+
+    }
 
 
 </script>
